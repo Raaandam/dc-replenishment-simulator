@@ -1,0 +1,32 @@
+# Data (M5 CSVs are large and downloaded manually)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+
+# Large / generated outputs
+reports/tables/
+reports/figures/
+reports/metrics.json
+reports/planner/
+reports/synthetic_smoke/
+artifacts/
+*.parquet
+*.pkl
+*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

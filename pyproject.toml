@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dc-replenishment-simulator"
+version = "0.1.0"
+description = "Discrete-event simulation of DC-to-dark-store replenishment policies and store picking capacity"
+authors = [{ name = "Mayank Sharma" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[project.scripts]
+dc-replenishment = "replenishment.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
